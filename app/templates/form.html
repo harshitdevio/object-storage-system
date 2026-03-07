@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add File Record</title>
+</head>
+<body>
+    <h2>Add New File</h2>
+
+    <form action="/add" method="post" enctype="multipart/form-data">
+
+        <input type="number" name="id" placeholder="ID" required>
+
+        <input type="text" name="user_id" placeholder="User UUID" required>
+
+        <input type="text" name="filename" placeholder="Filename" required>
+
+        <input type="text" name="file_key" placeholder="File Key" required>
+
+        <input type="text" name="file_url" placeholder="File URL" required>
+
+        <input type="text" name="content_type" placeholder="Content Type (e.g. image/png)" required>
+
+        <input type="number" name="size" placeholder="File Size (bytes)" required>
+
+        <input type="file" name="file">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
